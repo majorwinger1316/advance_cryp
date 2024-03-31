@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/advance_cryp/static/css/main.8a48e9a5.css",
+    "main.js": "/advance_cryp/static/js/main.21e36ace.js",
+    "static/js/453.e8155c02.chunk.js": "/advance_cryp/static/js/453.e8155c02.chunk.js",
+    "static/media/encrypt.png": "/advance_cryp/static/media/encrypt.503c1f1186b82cdac900.png",
+    "index.html": "/advance_cryp/index.html",
+    "main.8a48e9a5.css.map": "/advance_cryp/static/css/main.8a48e9a5.css.map",
+    "main.21e36ace.js.map": "/advance_cryp/static/js/main.21e36ace.js.map",
+    "453.e8155c02.chunk.js.map": "/advance_cryp/static/js/453.e8155c02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a48e9a5.css",
+    "static/js/main.21e36ace.js"
+  ]
+}

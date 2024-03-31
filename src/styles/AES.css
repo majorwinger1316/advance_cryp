@@ -1,0 +1,124 @@
+.aes {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    flex-direction: column;
+}
+
+.aes .func {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.aes h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px; /* Adjusted */
+    margin-bottom: 0; /* Adjusted */
+}
+
+.aes h2{
+    color: white;
+}
+
+.encryption,
+.decryption {
+  flex: 1;
+}
+
+.encrypt-controls,
+.decrypt-controls {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adjust as needed for spacing */
+}
+
+.encrypt-controls, .decrypt-controls label {
+    font-size: 30px;
+    color: #ACE2E1;
+}
+
+.encrypt-controls input,
+.decrypt-controls input {
+    margin-top: 5px; /* Adjust as needed */
+    padding: 5px; /* Adjust as needed */
+    font-size: 20px; /* Adjust as needed */
+}
+
+.encrypt-controls textarea,
+.decrypt-controls textarea {
+    margin-top: 5px; /* Adjust as needed */
+    padding: 5px; /* Adjust as needed */
+    font-size: 20px; /* Adjust as needed */
+}
+
+.encrypt-controls label,
+.decrypt-controls label {
+    font-size: 30px; /* Increased font size */
+    color: #ACE2E1; /* Changed label color */
+}
+
+/* Optional: Adjust spacing between label and input */
+.encrypt-controls label,
+.decrypt-controls label {
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+.encrypt-controls,
+.decrypt-controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Adjust as needed for spacing */
+}
+
+.encrypt-controls {
+    flex: 1; /* Takes up all available space */
+    margin-right: 200px; /* Adjust spacing as needed */
+}
+
+.decrypt-controls {
+    flex: 1; /* Takes up all available space */
+    margin-left: 200px; /* Adjust spacing as needed */
+}
+
+.encrypt-controls button,
+.decrypt-controls button {
+    font-size: 20px; /* Increase font size */
+    padding: 10px 20px; /* Increase padding for bigger button */
+    background-color: #ACE2E1; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.encrypt-controls button:hover,
+.decrypt-controls button:hover {
+    background-color: #07090a; 
+    transition: 0.3s ease-in;
+}
+
+.encrypt-controls label,
+.decrypt-controls label {
+    margin-bottom: 10px; /* Add space below each label */
+}
+
+.encrypt-controls input,
+.decrypt-controls input,
+.encrypt-controls textarea,
+.decrypt-controls textarea {
+    margin-bottom: 10px; /* Add space below each input */
+    padding: 8px; /* Add padding to inputs */
+}
+
+.encrypt-controls button,
+.decrypt-controls button {
+    margin-top: 10px; /* Add space above the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+}

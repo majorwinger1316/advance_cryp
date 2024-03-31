@@ -9,7 +9,7 @@ function Home() {
         <h1> Explore different Encryption and Decryption Algorithms </h1>
         <p> Discover a range of Encryption methods to secure your data </p>
         <div className="explore">
-          <Link to="/menu">
+          <Link to="/test">
             <button> EXPLORE ALGORITHMS </button>
           </Link>
         </div>

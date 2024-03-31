@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Test from "./pages/Test";
+import AES from "./pages/AES";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact Component={Home} />
           <Route path="/about" exact Component={About} />
           <Route path="/test" exact Component={Test} />
+          <Route path="/AES" exact Component={AES} />
         </Routes>
         <Footer />
       </Router>

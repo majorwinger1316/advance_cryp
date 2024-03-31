@@ -5,6 +5,8 @@ import "../styles/AES.css";
 function AES() {
   const [inputText, setInputText] = useState("");
   const [inputcipher, setCipherText] = useState("");
+  const [IV1, setIV1] = useState("");
+  const [IV2, setIV2] = useState("");
   const [encryptkey, setEncryptKey] = useState("");
   const [decryptkey, setDecryptKey] = useState("");
   const [encryptedText, setEncryptedText] = useState("");
@@ -12,7 +14,7 @@ function AES() {
 
   const handleEncrypt = () => {
     if (inputText && encryptkey) {
-      const encrypted = encryptAES(inputText, encryptkey);
+      const encrypted = encryptAES(inputText, encryptkey, IV1);
       setEncryptedText(encrypted);
     } else {
       alert("Please enter text and password");
@@ -22,7 +24,7 @@ function AES() {
   const handleDecrypt = () => {
     if (inputcipher && decryptkey) {
       try {
-        const decrypted = decryptAES(inputcipher, decryptkey);
+        const decrypted = decryptAES(inputcipher, decryptkey, IV2);
         setDecryptedText(decrypted);
       } catch (error) {
         alert("Decryption failed. Please check your input and try again.");
@@ -51,6 +53,13 @@ function AES() {
               />
             </div>
 
+            <label>Initialisation Vector</label>
+            <input
+              type="text"
+              value={IV1}
+              onChange={(e) => setIV1(e.target.value)}
+            />
+
             <label>Secret Key:</label>
             <input
               type="text"
@@ -72,6 +81,13 @@ function AES() {
               type="text"
               value={inputcipher}
               onChange={(e) => setCipherText(e.target.value)}
+            />
+
+            <label>Initialisation Vector</label>
+            <input
+              type="text"
+              value={IV2}
+              onChange={(e) => setIV2(e.target.value)}
             />
 
             <label>Secret Key:</label>

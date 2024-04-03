@@ -5,12 +5,20 @@ import "../styles/AES.css";
 function AES() {
   const [inputText, setInputText] = useState("");
   const [inputcipher, setCipherText] = useState("");
-  const [IV1, setIV1] = useState("");
-  const [IV2, setIV2] = useState("");
+  const [IV1, setIV1] = useState(
+    "69 c4 e0 d8 6a 7b 04 30 d8 cd b7 80 70 b4 c5 5a"
+  );
+  const [IV2, setIV2] = useState(
+    "69 c4 e0 d8 6a 7b 04 30 d8 cd b7 80 70 b4 c5 5a"
+  );
   const [encryptkey, setEncryptKey] = useState("");
   const [decryptkey, setDecryptKey] = useState("");
   const [encryptedText, setEncryptedText] = useState("");
   const [decryptedText, setDecryptedText] = useState("");
+
+  const handleIVChange = (e) => {
+    setIV1(e.target.value); // Update the IV value when user changes it
+  };
 
   const handleEncrypt = () => {
     if (inputText && encryptkey) {
@@ -56,8 +64,8 @@ function AES() {
             <label>Initialisation Vector</label>
             <input
               type="text"
-              value={IV1}
-              onChange={(e) => setIV1(e.target.value)}
+              value={IV1} // Bind the value to the state
+              onChange={handleIVChange}
             />
 
             <label>Secret Key:</label>

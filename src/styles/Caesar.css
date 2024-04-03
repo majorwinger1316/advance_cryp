@@ -1,4 +1,4 @@
-.aes {
+.caesar {
     width: 100%;
     min-height: 80vh;
     display: flex;
@@ -9,13 +9,13 @@
     flex-direction: column;
 }
 
-.aes .func {
+.caesar .func {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
 }
 
-.aes h1{
+.caesar h1{
     font-size: 40px;
     font-weight: 700;
     color: white;
@@ -23,8 +23,9 @@
     margin-bottom: 0; /* Adjusted */
 }
 
-.aes h2{
+.caesar h2{
     color: white;
+    text-align: center; /* Align h2 in the center */
 }
 
 .encryption,
@@ -125,7 +126,7 @@
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
-    .aes h1 {
+    .caesar h1 {
         font-size: 30px;
     }
 
@@ -135,4 +136,3 @@
         margin-left: 0;
     }
 }
-

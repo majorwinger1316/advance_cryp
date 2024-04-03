@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Test from "./pages/Test";
 import AES from "./pages/AES";
+import Caesar from "./pages/Caesar";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" exact Component={About} />
           <Route path="/test" exact Component={Test} />
           <Route path="/AES" exact Component={AES} />
+          <Route path="/Caesar" exact Component={Caesar} />
         </Routes>
         <Footer />
       </Router>

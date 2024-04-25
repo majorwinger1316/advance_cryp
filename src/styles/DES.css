@@ -1,4 +1,4 @@
-.caesar {
+.des {
     width: 100%;
     min-height: 80vh;
     display: flex;
@@ -9,68 +9,57 @@
     flex-direction: column;
 }
 
-.caesar .func {
+.des .func {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
 }
 
-.caesar h1{
+.des h1{
     font-size: 40px;
     font-weight: 700;
     color: white;
-    margin-top: 20px; /* Adjusted */
-    margin-bottom: 0; /* Adjusted */
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
-.caesar h2{
+.des h2{
     color: white;
-    text-align: center; /* Align h2 in the center */
 }
 
-.encryption,
-.decryption {
-    flex: 1;
-}
 
 .encrypt-controls,
 .decrypt-controls {
     display: flex;
     flex-direction: column;
-    margin-right: 20px; /* Adjust as needed for spacing */
+    padding: 60px;
+    margin-right: 20px;
 }
 
-.encrypt-controls, .decrypt-controls label {
-    font-size: 30px;
-    color: #ACE2E1;
-}
 
 .encrypt-controls input,
 .decrypt-controls input {
-    margin-top: 5px; /* Adjust as needed */
-    padding: 5px; /* Adjust as needed */
-    font-size: 20px; /* Adjust as needed */
+    margin-top: 5px;
+    width: 300px;
+    padding: 5px;
+    font-size: 20px; 
 }
 
-.encrypt-controls textarea,
-.decrypt-controls textarea {
+.encrypt-controls .copyenc textarea,
+.decrypt-controls .copydec textarea {
     margin-top: 5px; /* Adjust as needed */
     padding: 5px; /* Adjust as needed */
-    font-size: 20px; /* Adjust as needed */
-    background-color: #222831;
+    font-size: 20px;
 }
 
 .encrypt-controls label,
 .decrypt-controls label {
     font-size: 30px; /* Increased font size */
-    color: #ACE2E1; /* Changed label color */
+    color: #ACE2E1;
+    margin-bottom: 50px;
 }
 
 /* Optional: Adjust spacing between label and input */
-.encrypt-controls label,
-.decrypt-controls label {
-    margin-bottom: 5px; /* Adjust as needed */
-}
 
 .encrypt-controls,
 .decrypt-controls {
@@ -79,21 +68,11 @@
     margin-right: 20px; /* Adjust as needed for spacing */
 }
 
-.encrypt-controls {
-    flex: 1; /* Takes up all available space */
-    margin-right: 20px; /* Adjust spacing as needed */
-}
-
-.decrypt-controls {
-    flex: 1; /* Takes up all available space */
-    margin-left: 20px; /* Adjust spacing as needed */
-}
-
 .encrypt-controls button,
 .decrypt-controls button {
     font-size: 20px; /* Increase font size */
-    padding: 10px 20px; /* Increase padding for bigger button */
-    background-color: #ACE2E1; /* Green background */
+    padding: 10px 20px;
+    background-color: #ACE2E1; 
     border: none; /* Remove border */
     color: white; /* White text color */
     border-radius: 5px; /* Add border radius for rounded corners */
@@ -106,39 +85,47 @@
     transition: 0.3s ease-in;
 }
 
-.encrypt-controls label,
-.decrypt-controls label {
-    margin-bottom: 10px; /* Add space below each label */
-}
 
 .encrypt-controls input,
 .decrypt-controls input,
-.encrypt-controls textarea,
-.decrypt-controls textarea {
-    margin-bottom: 10px; /* Add space below each input */
-    padding: 8px; /* Add padding to inputs */
+.encrypt-controls .copyenc textarea,
+.decrypt-controls .copydec textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+    background-color:#222831;
+    color: white;
+    font-family: kregularFont;
 }
 
-.encrypt-controls button,
-.decrypt-controls button {
-    margin-top: 10px; /* Add space above the button */
-    padding: 10px 20px; /* Adjust padding as needed */
+.encrypt-controls .copyenc, .decrypt-controls .copydec{
+    display: flex;
+    flex-direction: row;
+}
+
+.encrypt-controls .copyenc button, .decrypt-controls .copydec button{
+    background-color: #222831;
 }
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
-    .caesar h1 {
+    .aes h1 {
         font-size: 30px;
     }
 
-    .caesar .func{
+    .aes .func{
         display: flex;
         flex-direction: column;
     }
 
     .encrypt-controls,
     .decrypt-controls {
-        margin-right: 0;
-        margin-left: 0;
+        display: flex;
+        flex-direction: column; /* Change from row to column */
+        align-items: center; /* Center align items */
+        padding: 20; /* Remove padding */
+        margin-right: 0; /* Remove right margin */
     }
 }
+
+

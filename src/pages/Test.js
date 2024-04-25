@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 import "../styles/Test.css";
 
 function Test() {
@@ -9,7 +10,19 @@ function Test() {
         <h1>
           Start Encrypting your Plain Texts or Decrypting your Cipher Texts
         </h1>
-        <h2>Use some of the Encryption Algorithms</h2>
+        <Typewriter
+          options={{
+            strings: [
+              "Guard your Passwords.",
+              "The correct way!",
+              "Try some of the encryption algorithms.",
+            ],
+            autoStart: true,
+            loop: true,
+            wrapperClassName: "typer",
+            cursorClassName: "cursor",
+          }}
+        />
         <div className="type">
           <Link to="/AES">
             <button>AES Encryption and Decryption</button>

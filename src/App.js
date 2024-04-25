@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Test from "./pages/Test";
 import AES from "./pages/AES";
 import Caesar from "./pages/Caesar";
+import RSA from "./pages/RSA";
+import DES from "./pages/DES";
 
 function App() {
   return (
@@ -14,11 +16,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact Component={Home} />
-          <Route path="/about" exact Component={About} />
-          <Route path="/test" exact Component={Test} />
-          <Route path="/AES" exact Component={AES} />
-          <Route path="/Caesar" exact Component={Caesar} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" exact element={<About />} />
+          <Route path="/test" exact element={<Test />} />
+          <Route path="/AES" exact element={<AES />} />
+          <Route path="/Caesar" exact element={<Caesar />} />
+          <Route path="/RSA" exact element={<RSA />} />
+          <Route path="/DES" exact element={<DES />} />
         </Routes>
         <Footer />
       </Router>

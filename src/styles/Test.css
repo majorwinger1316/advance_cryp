@@ -5,8 +5,20 @@
     justify-content: center;
     align-items: center;
     background-color: #222831;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: Arial, sans-serif;
 }
+
+.typer {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .cursor {
+    color: white;
+    font-size: 30px;
+  }
 
 .head {
     width: auto;

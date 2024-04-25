@@ -92,8 +92,37 @@ function Caesar() {
           </div>
         </div>
       </div>
+      <div>
+        <h1>Caesar Cipher Encryption</h1>
+        <div>
+          <label htmlFor="plaintext">Plaintext:</label>
+          <input
+            id="plaintext"
+            type="text"
+            value={plaintext}
+            onChange={(e) => setPlaintext(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="key">Key (1-25):</label>
+          <input
+            id="key"
+            type="text"
+            value={key}
+            onChange={(e) => setKey(e.target.value)}
+          />
+        </div>
+        <div>
+          <button onClick={handleEncrypt}>Encrypt</button>
+        </div>
+        {encryptedMessage && (
+          <div>
+            <h2>Encrypted Message:</h2>
+            <p>{encryptedMessage}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
-
 export default Caesar;

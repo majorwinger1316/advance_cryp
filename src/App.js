@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />
-          <Route path="/test" exact element={<Test />} />
-          <Route path="/AES" exact element={<AES />} />
+          <Route path="/test" exact element={<AES />} />
+          <Route path="/AES" exact element={<TEST />} />
           <Route path="/Caesar" exact element={<Caesar />} />
           <Route path="/RSA" exact element={<RSA />} />
           <Route path="/DES" exact element={<DES />} />
